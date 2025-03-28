@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<head>
+  <style>
+
+    body{
+    background-color: black;
+    margin: 20px;
+}
+
+h3{
+    color: white;
+    font-family: verdana;
+}
+.ctn{
+    display: grid;
+    grid-template-columns: 200px 75px ;
+    column-gap: 0px;
+   
+}
+.ctn-1{
+    
+   
+    background-color: aquamarine;
+}
+.ctn-2{
+   
+   
+    background-color: pink;
+}
+
+.col{
+    display: grid;
+    grid-template-columns: 50px auto 75px;
+    column-gap: 0px;
+    
+}
+
+.col-1{
+   
+    background-color: aquamarine;
+}
+.col-2{
+    background-color: pink;
+}
+.col-3{
+    width: 75px;
+    background-color: aquamarine;
+}
+
+.container{
+    background-color: aliceblue;
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    width: 880px;
+}
+
+.ctn--1{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap:20px;
+}
+.ctn--2{
+    
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 20px;
+}
+
+.c-1{
+    background-color: pink;
+}
+
+.fb{
+    margin: 30px;
+    padding: 20px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 290px 290px 290px;
+    width: 850px;
+ 
+   
+}
+
+
+.me{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+span{
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.mf{
+    color: rgb(165, 165, 165);
+    font-weight: 100px;
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: small;
+   
+}
+
+
+.o-3, .m-3, .cat-3{
+    display: flex;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+
+.btn{
+    width: 120px;
+    height: 40px;
+    background-color: #1877F2;
+    color: white;
+    border: none;
+    margin: 5px 0px;
+    font-size: large;
+}
+
+.o-2, .m-22, .cat-2{
+    margin: 3px 0px;}
+
+
+
+
+  </style>
+   
+</head>
+<body>
+     <h3>11a. create a grid with 2 columns with width of 200px and 75px</h3>
+    <div class="ctn">
+        <div class="ctn-1"> 200px</div>
+        <div class="ctn-2">75px</div>
+    </div>
+
+    <h3>11b.create a grid with 3 columns. Width 50px | remaining space | 75px </h3>
+    <div class="col">
+        <div class="col-1">col1</div>
+        <div class="col-2">col2</div>
+        <div class="col-3">col3</div>
+    </div>
+
+    <h3>11c. Create a grid with 4 equal comuns that take up the entire page. <br>
+    Space between columns = 20px, space between rows = 10px </h3>
+    <div class="container">
+        <div class="ctn--1">
+            <div class="c-1">col1</div>
+            <div class="c-1">col2</div>
+            <div class="c-1">col3</div>
+            <div class="c-1">col4</div>
+        </div>
+
+        <div class="ctn--2">
+            <div class="c-1">col1</div>
+            <div class="c-1">col2</div>
+            <div class="c-1">col3</div>
+            <div class="c-1">col4</div>
+        </div>
+    </div>
+
+        <h3>11d. Continuing from exercise 10e. create this design using CSS Grid</h3>
+    <div class="fb">
+        <div class="oliver">
+            <div class="o-1"> <img src="/cat-oliver.png" alt="OLVER PROFILE"></div>
+            <div class="o-2"> <span>Oliver</span></div>
+            <div class="o-3"><img class="me" src="/drill-monkey-01_3x4.jpg" alt="ME"> <span class="mf">2 Mutual friends</span></div>
+            <button class="btn"> Add Friend </button>
+        </div>
+
+        <div class="mimi">
+            <div class="m-1"> <img src="/cat-mimi.png" alt="MIMI PROFILE"></div>
+            <div class="m-2"> <span>Mimi</span></div>
+            <div class="m-3"><img class="me" src="/cccd9ab3a8832417497e233c1cb92b9e.jpg" alt="ME"> <span class="mf">3 Mutual friends</span></div>
+            <button class="btn">Add Friend</button>
+        </div>
+
+        <div class="cat">
+            <div class="cat-1"> <img src="/cat-rex.png" alt="CAT PROFILE"></div>
+            <div class="cat-2"> <span>Cat</span></div>
+            <div class="cat-3"><img class="me" src="/shutterstock_88192939-1024x768.jpg" alt="ME"> <span class="mf">4 Mutual friends</span></div>
+            <button class="btn">Add Friend </button>
+        </div>
+    </div>
+
+</body>
+</html>
